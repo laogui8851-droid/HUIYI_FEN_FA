@@ -81,7 +81,7 @@
     .hero {
       position: relative;
       overflow: hidden;
-      padding: 24px 26px;
+      padding: 28px 26px 30px;
       border: 1px solid var(--line);
       border-radius: 26px;
       background:
@@ -90,6 +90,10 @@
       box-shadow: var(--shadow);
       -webkit-backdrop-filter: blur(14px);
       backdrop-filter: blur(14px);
+    }
+
+    .hero + .section {
+      margin-top: 38px;
     }
 
     .hero::before {
@@ -110,7 +114,7 @@
     .hero-brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 16px;
     }
 
     .hero-brand img {
@@ -143,6 +147,7 @@
       align-items: center;
       gap: 10px;
       padding: 10px 14px;
+      margin-bottom: 18px;
       border-radius: 999px;
       background: rgba(88, 166, 255, 0.12);
       border: 1px solid rgba(88, 166, 255, 0.16);
@@ -429,8 +434,17 @@
         border-radius: 22px;
       }
 
+      .hero {
+        padding-top: 20px;
+        padding-bottom: 24px;
+      }
+
       .hero + .section {
-        margin-top: 18px;
+        margin-top: 28px;
+      }
+
+      .eyebrow {
+        margin-bottom: 14px;
       }
 
       .eyebrow {
@@ -507,11 +521,11 @@
           </div>
         </div>
         <p class="summary">
-          支持 Android、iPhone / iPad、Windows 和 Linux。先下载移动端，桌面端安装包在下方模块中。
+          支持 Android、iOS / iPadOS、Windows 和 Linux。优先下载移动端，桌面端安装包在下方模块中。
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="../云际会议_1.0.0.apk">Android 下载</a>
-          <a class="button button-secondary" href="https://testflight.apple.com/join/kFPQhPNU">iOS 安装</a>
+          <a class="button button-secondary" href="https://testflight.apple.com/join/kFPQhPNU">Apple TestFlight 安装</a>
         </div>
       </div>
     </section>
@@ -565,14 +579,14 @@
             <div class="platform-icon">iOS</div>
             <div class="platform-tag">移动端</div>
           </div>
-          <h4>iPhone / iPad</h4>
-          <p class="platform-subtitle">通过 TestFlight 安装，适合移动入会、临时连线和外出场景下快速接入会议。</p>
+          <h4>iOS / iPadOS</h4>
+          <p class="platform-subtitle">通过 Apple TestFlight 安装，适合移动入会、临时连线和外出场景下快速接入会议。</p>
           <div class="platform-meta">
-            <span class="meta-pill">TestFlight</span>
+            <span class="meta-pill">Apple TestFlight</span>
             <span class="meta-pill">iOS 12+</span>
           </div>
           <div class="platform-actions">
-            <a class="button button-secondary" href="https://testflight.apple.com/join/kFPQhPNU">前往安装</a>
+            <a class="button button-secondary" href="https://testflight.apple.com/join/kFPQhPNU">Apple TestFlight 安装</a>
           </div>
         </article>
 
@@ -616,8 +630,8 @@
         </article>
 
         <article class="tip-card">
-          <strong>iOS 入口</strong>
-          <p>iPhone 和 iPad 通过 TestFlight 安装。首次打开后再根据系统提示授权麦克风、摄像头和通知权限。</p>
+          <strong>Apple TestFlight 安装</strong>
+          <p>iPhone 和 iPad 通过 Apple TestFlight 安装。首次打开后再根据系统提示授权麦克风、摄像头和通知权限。</p>
         </article>
       </div>
     </section>
